@@ -12,17 +12,12 @@ footer {
 nav a {
     color:blueviolet;
     margin: 0 15px;
-
- 
 }
 nav a:hover {
     text-decoration: backdrop;
 }
 
 body {
-
-    background-color: orange;
-    /*change this color*/
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -61,14 +56,124 @@ button {
 }
 
 .btn-glow {
-    Background: lightgreen;
+    background: lightgreen;
     color: black;
     border-radius: 5px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s;
 
 }
 
-.button-glow:hover {
+.btn-glow:hover {
     box-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
 
+}
+
+
+/* Project 2 Photo Galllery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+
+}
+
+
+
+.gallery img {
+    width: 180px;
+    height: 120px;
+    object-fit: fill; /*fill image file box without distortion*/
+    border-radius: 6px;
+    transition: 0.3; /*smoothly transitions*/
+    gap: 10px;
+}
+
+.hover-one:hover {
+    transform: rotate(5deg) scale(1.05); /* rotates image by 5 degrees*/
+    box-shadow: 0.2px 15px;
+    opacity: 1;
+}
+
+/* Hover effect 2: Grayscale to color Fade*/
+.hover-two:hover {
+    filter: blur(100%);
+    transition: filter 0.4, transform 0.3;
+    transform: scale(1.05)
+
+
+}
+
+/* Hover effect 3: Scale and Fade*/
+.hover-three:hover {
+    transform: scale(1.65);
+    opacity: 0.5; /* makes the image slightly transparent*/
+    transform: rotateY(180deg);
+
+}
+
+/*Project 3 Styled quote box*/
+.quote-section{
+    text-align: center;
+    max-width: 30%; /*limits section width to 30%*/
+    background-image: linear-gradient(180deg, red, yellow); 
+
+}
+
+.quote-section h3{
+    color: black; /* go back and change if ugly*/
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    text-transform:capitalize;
+    letter-spacing: 1px;
+
+}
+
+.quote-box{
+    font-family:fantasy;
+    font-style:oblique;
+    background-image:linear-gradient(135deg blue, green), url("https://www.transparenttextures.com/patterns/white-diamond.png");
+    background-blend-mode:backdrop;
+    padding: 20px 30px;
+    border-left: 5px white;
+    border-radius: 15px;
+    box-shadow:0 4px 10px#4F251B;
+    color: red;
+    transition: transform 0.2 ease, box-shadow 0.2 ease, background 0.2 ease;
+
+
+
+}
+.quote-box:hover{
+    transform: translateY(-4px); /*slightly lifts the box when hovered*/
+    box-shadow:0 4px 10px#4F251B;
+    background-image:linear-gradient(135deg, green, blue), url("https://www.transparenttextures.com/patterns/white-diamond.png");
+
+
+
+}
+.quote-box cite{
+    display: block;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: bold;
+    color:#4F2E26;
+    text-align: right;
+    letter-spacing: 0.5px;
+
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+.container section{
+    margin:10px;
+    padding:20px;
+}
+   
+.my-chud-image{
+    width:auto;
+    height:auto;
+    border:5px solid black;
+    border-radius:30%
 }
