@@ -107,6 +107,7 @@ button {
 .hover-three:hover {
     transform: scale(1.65);
     opacity: 0.5; /* makes the image slightly transparent*/
+    transform: rotateY(180deg);
 
 }
 
@@ -114,12 +115,12 @@ button {
 .quote-section{
     text-align: center;
     max-width: 30%; /*limits section width to 30%*/
-
+    background-image: linear-gradient(180deg, red, yellow); 
 
 }
 
 .quote-section h3{
-    color:black; /* go back and change if ugly*/
+    color: black; /* go back and change if ugly*/
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
     text-transform:capitalize;
@@ -130,9 +131,9 @@ button {
 .quote-box{
     font-family:fantasy;
     font-style:oblique;
-    background-image:linear-gradient 135deg,#4F2E26 #4F251B url(https://htmlcolorcodes.com/);
+    background-image:linear-gradient(135deg blue, green), url("https://www.transparenttextures.com/patterns/white-diamond.png");
     background-blend-mode:backdrop;
-    padding: 20px, 30px;
+    padding: 20px 30px;
     border-left: 5px white;
     border-radius: 15px;
     box-shadow:0 4px 10px#4F251B;
@@ -142,10 +143,10 @@ button {
 
 
 }
-.quote-box:over{
+.quote-box:hover{
     transform: translateY(-4px); /*slightly lifts the box when hovered*/
     box-shadow:0 4px 10px#4F251B;
-    background-image:linear-gradient 135deg, #4F251B #4F2E26 url(https://htmlcolorcodes.com/);
+    background-image:linear-gradient(135deg, green, blue), url("https://www.transparenttextures.com/patterns/white-diamond.png");
 
 
 
@@ -160,6 +161,20 @@ button {
     letter-spacing: 0.5px;
 
 }
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+.container section{
+    margin:10px;
+    padding:20px;
+}
    
-
-
+.my-chud-image{
+    width:auto;
+    height:auto;
+    border:5px solid black;
+    border-radius:30%;
+    background-color:#AD4949;
+}
