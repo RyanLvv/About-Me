@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ME</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>About Me</h1>
+        <nav>
+           <a href="https://nwscc.edu/">My Favorite Webpage</a>
+           <a href="https://www.crunch.com/locations/florenceal">Gym</a>
+            <a href="../cssProjects/index.html">CSS Projects</a>
+            <a href="../index.html">Home Page</a>
+            
+        </nav>   
+
+    </header>
+    <main>
+
+    <section>
+        <h2>Introduction to the page</h2>
+        <p>This is a simulation of a contact page</p>
+    </section>
+
+    <section>
+        <form class="contact-form">
+            <h2>Contact Me</h2>
+            <label for="name">Name*</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email: *</label>
+            <input type="email" id="email" placeholder="Johndoe@gmail.com" required>
+
+            <label for="password">Password*</label>
+            <input type="password" id="password" placeholder="enter a password" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" placeholder="(256) 765-1000" required>
+
+            <label for="website">Website*</label>
+            <input type="url" id="phone" placeholder="https://www.google.com">
+
+            <label for="age">Age*</label>
+            <input type="number" id="age" min="1" max="120" placeholder="20" required>
+
+            <label for="dob">Date of Birth: *</label>
+            <input type="date" id="dob" required>
+
+            <label for="time">Preferred Contact Time: *</label>
+            <imput type="time" id="time">
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" value="red">
+
+            <label for="range">Interest Lavel (1-10)*</label>
+            <input type="range" id="range" min="1" max="10" value="5" required>
+
+            <label>Preffered Contact Method</label>
+            <div class="inline-options">
+                <label>
+                    <input type="radio" name="ContactMethod" value="Email" checked>
+                    Email
+                </label>
+                <label>
+                    <input type="radio" name="ContatctMethod" value="Phone" checked>
+                    Phone
+                </label>
+
+                <label type="radio" name="ContactMethod" value="Text" checked>
+                    Text
+                </label>
+            </div>
+            <label>Services Interest In</label>
+            <div class="inline-options">
+                <label>
+                    <input type="checkbox" name="services" values="Web Design">
+                    Web Design
+                </label>
+
+                <label>
+                    <input type="checkbox" name="services" value="Consulting">
+                    Consulting
+                </label>
+
+                <label>
+                    <input type="checkbox" name="services" value="Other">
+                    Other
+                </label>
+
+            </div>
+
+            <label for="topic">Topic</label>
+            <select id="topic">
+                <option value="Geneneral">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+
+            <label for="Message">Message</label>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>This was made by Ryan Lovvorn</footer>
+    </main>
+    
+
+
+
+</body>
+</html>
