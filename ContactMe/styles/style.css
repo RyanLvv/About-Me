@@ -28,9 +28,12 @@ main {
  background-color: orange;
  justify-content: center;
  align-items: center;
+ display:flex;
+ flex-direction:column;
 
 
 }
+
 
 .contact-form {
     background: white;
