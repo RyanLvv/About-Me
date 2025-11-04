@@ -91,3 +91,30 @@ main {
     gap: 10px;
 
 }
+
+#resultContainer {
+    margin-top: 10px;
+    background: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px white;
+    width: 80%;
+    max-width: 700px;
+}
+
+#resultTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#resultTable th, #resultTable td {
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+}
+
+#resultTable th {
+    background-color: blue;
+    color: white;
+    
+}
