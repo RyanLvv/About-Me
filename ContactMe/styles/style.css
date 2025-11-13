@@ -34,6 +34,17 @@ main {
 
 }
 
+.introBox {
+    border: 2px solid white; /* white border around the box */
+    padding: 20px; /* space inside the box */
+    margin: 20px auto; /* spacing around the box */
+     width: 70%; /*  adjust width as needed */
+    text-align: left; /* left-aligns everything */
+    background-color: #111; /* optional: dark background so white border pops */
+    color: white; /* white text to contrast the background */
+    border-radius: 8px; /* rounded corners */
+}
+
 
 .contact-form {
     background: white;
@@ -94,27 +105,35 @@ main {
 
 #resultContainer {
     margin-top: 10px;
-    background: yellow;
+    background: orange;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px white;
+    box-shadow: 0 4px 8px black;
     width: 80%;
     max-width: 700px;
+    color: white;
 }
 
 #resultTable {
     width: 100%;
     border-collapse: collapse;
+    color: white;
+    background-color: darkgray;
 }
 
 #resultTable th, #resultTable td {
-    border: 1px solid red;
+    border: 3px solid black;
     padding: 10px;
     text-align: center;
+    color:white;
 }
 
 #resultTable th {
-    background-color: blue;
+    background-color: darkgrey;
     color: white;
     
+}
+
+#resultTable td {
+    background-color: darkgrey;
 }
